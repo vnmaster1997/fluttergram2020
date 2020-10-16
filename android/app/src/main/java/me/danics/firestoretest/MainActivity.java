@@ -1,4 +1,4 @@
-package me.danics.firestoretest;
+package me.danics.firestorekis;
 
 import android.os.Bundle;
 
