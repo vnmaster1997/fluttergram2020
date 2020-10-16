@@ -1,5 +1,6 @@
 {
   "projects": {
-    "fluttergram-6e725": "fluttergram-6e725"
+    "fluttergram-6e725": "fluttergram-6e725",
+    "default": "fluttergram-6e725"
   }
 }

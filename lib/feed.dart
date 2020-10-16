@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'image_post.dart';
 import 'dart:async';
 import 'main.dart';
-import 'dart:io';
+// import 'dart:io';
 import 'dart:convert';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:universal_io/io.dart';
 
 class Feed extends StatefulWidget {
   _Feed createState() => _Feed();
