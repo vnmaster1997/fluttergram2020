@@ -1,11 +1,15 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'image_post.dart';
 import 'dart:async';
 import 'main.dart';
 // import 'dart:io';
+// import 'dart:html';
 import 'dart:convert';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:universal_io/io.dart';
+// import 'package:universal_io/io.dart';
+import 'package:http/http.dart' as http;
+import 'dart:convert' as convert;
 
 class Feed extends StatefulWidget {
   _Feed createState() => _Feed();
@@ -83,24 +87,38 @@ class _Feed extends State<Feed> with AutomaticKeepAliveClientMixin<Feed> {
     String userId = googleSignIn.currentUser.id.toString();
     var url =
         'https://us-central1-fluttergram-6e725.cloudfunctions.net/getFeed?uid=' + userId;
-    var httpClient = HttpClient();
+        // var url = 'https://localhost:3000/users/insta-a-feed?uid='+userId;
+    // var httpClient = new HttpClient();
+    var httpClient = new http.Client(); 
 
     List<ImagePost> listOfPosts;
     String result;
     try {
-      var request = await httpClient.getUrl(Uri.parse(url));
-      var response = await request.close();
-      if (response.statusCode == HttpStatus.ok) {
-        String json = await response.transform(utf8.decoder).join();
-        prefs.setString("feed", json);
-        List<Map<String, dynamic>> data =
-            jsonDecode(json).cast<Map<String, dynamic>>();
-        listOfPosts = _generateFeed(data);
-        result = "Success in http request for feed";
-      } else {
-        result =
-            'Error getting a feed: Http status ${response.statusCode} | userId $userId';
-      }
+      http.get(url)
+        .then((response) {
+          print("Response status: ${response.statusCode}");
+          print("Response body: ${response.body}");
+          prefs.setString("feed", response.body);
+          List<Map<String, dynamic>> data =
+            jsonDecode(response.body).cast<Map<String, dynamic>>();
+          listOfPosts = _generateFeed(data);
+          result = "Success in http request for feed";
+        });
+      // var request = await httpClient.getUrl(Uri.parse(url));
+      // var response = await request.close();
+      // var response = await httpClient.get(url);
+      // if (response.statusCode == HttpStatus.ok) {
+      //   String json = await response.transform(utf8.decoder).join();
+      //   prefs.setString("feed", json);
+      //   List<Map<String, dynamic>> data =
+      //       jsonDecode(json).cast<Map<String, dynamic>>();
+      //   listOfPosts = _generateFeed(data);
+      //   result = "Success in http request for feed";
+      // } else {
+      //   result =
+      //       'Error getting a feed: Http status ${response.statusCode} | userId $userId';
+      // }
+      
     } catch (exception) {
       result = 'Failed invoking the getFeed function. Exception: $exception';
     }
