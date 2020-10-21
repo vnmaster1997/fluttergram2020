@@ -21,7 +21,8 @@ class _Feed extends State<Feed> with AutomaticKeepAliveClientMixin<Feed> {
   @override
   void initState() {
     super.initState();
-    this._loadFeed();
+    // this._loadFeed();
+    this._getFeed();
   }
 
   buildFeed() {
