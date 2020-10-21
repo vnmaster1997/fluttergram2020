@@ -1,12 +1,19 @@
-2020/10/20-16:53:30.585 3644 Reusing MANIFEST C:\Users\namnv\AppData\Local\Temp\flutter_tools.694accaa\flutter_tools_chrome_device.695e2468\Default\Local Storage\leveldb/MANIFEST-000001
-2020/10/20-16:53:30.585 3644 Recovering log #22
-2020/10/20-16:53:30.586 3644 Reusing old log C:\Users\namnv\AppData\Local\Temp\flutter_tools.694accaa\flutter_tools_chrome_device.695e2468\Default\Local Storage\leveldb/000022.log 
-2020/10/20-16:53:30.586 3644 Delete type=0 #3
-2020/10/20-16:53:30.586 3644 Delete type=0 #4
-2020/10/20-16:53:30.586 3644 Delete type=0 #7
-2020/10/20-16:53:30.586 3644 Delete type=2 #8
-2020/10/20-16:53:30.586 3644 Delete type=0 #10
-2020/10/20-16:53:30.586 3644 Delete type=2 #11
-2020/10/20-16:53:30.586 3644 Delete type=0 #13
-2020/10/20-16:53:30.586 3644 Delete type=2 #14
-2020/10/20-16:53:30.587 3644 Delete type=0 #18
+2020/10/21-15:34:48.460 f04 Reusing MANIFEST C:\Users\namnv\AppData\Local\Temp\flutter_tools.7fe4c7e5\flutter_tools_chrome_device.b8ce3fd1\Default\Local Storage\leveldb/MANIFEST-000001
+2020/10/21-15:34:48.461 f04 Recovering log #31
+2020/10/21-15:34:48.461 f04 Reusing old log C:\Users\namnv\AppData\Local\Temp\flutter_tools.7fe4c7e5\flutter_tools_chrome_device.b8ce3fd1\Default\Local Storage\leveldb/000031.log 
+2020/10/21-15:34:48.461 f04 Delete type=0 #3
+2020/10/21-15:34:48.461 f04 Delete type=0 #4
+2020/10/21-15:34:48.461 f04 Delete type=0 #7
+2020/10/21-15:34:48.461 f04 Delete type=2 #8
+2020/10/21-15:34:48.461 f04 Delete type=0 #10
+2020/10/21-15:34:48.461 f04 Delete type=2 #11
+2020/10/21-15:34:48.461 f04 Delete type=0 #13
+2020/10/21-15:34:48.461 f04 Delete type=2 #14
+2020/10/21-15:34:48.462 f04 Delete type=0 #18
+2020/10/21-15:34:48.462 f04 Delete type=2 #20
+2020/10/21-15:34:48.462 f04 Delete type=0 #22
+2020/10/21-15:34:48.462 f04 Delete type=2 #23
+2020/10/21-15:34:48.462 f04 Delete type=0 #25
+2020/10/21-15:34:48.462 f04 Delete type=2 #26
+2020/10/21-15:34:48.462 f04 Delete type=0 #28
+2020/10/21-15:34:48.462 f04 Delete type=2 #29

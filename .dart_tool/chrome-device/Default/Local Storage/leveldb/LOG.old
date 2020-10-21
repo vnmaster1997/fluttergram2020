@@ -1,14 +1,26 @@
-2020/10/20-15:01:51.799 ee0 Reusing MANIFEST C:\Users\namnv\AppData\Local\Temp\flutter_tools.715e0bce\flutter_tools_chrome_device.c4932475\Default\Local Storage\leveldb/MANIFEST-000001
-2020/10/20-15:01:51.799 ee0 Recovering log #18
-2020/10/20-15:01:51.799 ee0 Reusing old log C:\Users\namnv\AppData\Local\Temp\flutter_tools.715e0bce\flutter_tools_chrome_device.c4932475\Default\Local Storage\leveldb/000018.log 
-2020/10/20-15:01:51.800 ee0 Delete type=0 #3
-2020/10/20-15:01:51.800 ee0 Delete type=0 #4
-2020/10/20-15:01:51.800 ee0 Delete type=0 #7
-2020/10/20-15:01:51.800 ee0 Delete type=2 #8
-2020/10/20-15:01:51.800 ee0 Delete type=0 #10
-2020/10/20-15:01:51.800 ee0 Delete type=2 #11
-2020/10/20-15:01:51.800 ee0 Delete type=0 #13
-2020/10/20-15:01:51.800 ee0 Delete type=2 #14
-2020/10/20-15:45:05.772 c14 Level-0 table #23: started
-2020/10/20-15:45:05.811 c14 Level-0 table #23: 17848 bytes OK
-2020/10/20-15:45:05.813 c14 Delete type=0 #18
+2020/10/21-15:23:19.611 4280 Reusing MANIFEST C:\Users\namnv\AppData\Local\Temp\flutter_tools.6c3e4e31\flutter_tools_chrome_device.33320968\Default\Local Storage\leveldb/MANIFEST-000001
+2020/10/21-15:23:19.612 4280 Recovering log #28
+2020/10/21-15:23:19.612 4280 Reusing old log C:\Users\namnv\AppData\Local\Temp\flutter_tools.6c3e4e31\flutter_tools_chrome_device.33320968\Default\Local Storage\leveldb/000028.log 
+2020/10/21-15:23:19.613 4280 Delete type=0 #3
+2020/10/21-15:23:19.613 4280 Delete type=0 #4
+2020/10/21-15:23:19.613 4280 Delete type=0 #7
+2020/10/21-15:23:19.613 4280 Delete type=2 #8
+2020/10/21-15:23:19.613 4280 Delete type=0 #10
+2020/10/21-15:23:19.613 4280 Delete type=2 #11
+2020/10/21-15:23:19.613 4280 Delete type=0 #13
+2020/10/21-15:23:19.613 4280 Delete type=2 #14
+2020/10/21-15:23:19.614 4280 Delete type=0 #18
+2020/10/21-15:23:19.614 4280 Delete type=0 #22
+2020/10/21-15:23:19.614 4280 Delete type=0 #25
+2020/10/21-15:29:51.675 3214 Level-0 table #32: started
+2020/10/21-15:29:51.679 3214 Level-0 table #32: 14396 bytes OK
+2020/10/21-15:29:51.682 3214 Delete type=0 #28
+2020/10/21-15:29:51.683 4760 Compacting 4@0 + 1@1 files
+2020/10/21-15:29:51.692 4760 Generated table #33@0: 687 keys, 59634 bytes
+2020/10/21-15:29:51.692 4760 Compacted 4@0 + 1@1 files => 59634 bytes
+2020/10/21-15:29:51.693 4760 compacted to: files[ 0 1 1 0 0 0 0 ]
+2020/10/21-15:29:51.694 4760 Delete type=2 #20
+2020/10/21-15:29:51.694 4760 Delete type=2 #23
+2020/10/21-15:29:51.695 4760 Delete type=2 #26
+2020/10/21-15:29:51.695 4760 Delete type=2 #29
+2020/10/21-15:29:51.695 4760 Delete type=2 #32
