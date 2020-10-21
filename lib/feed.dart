@@ -67,7 +67,7 @@ class _Feed extends State<Feed> with AutomaticKeepAliveClientMixin<Feed> {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     String json = prefs.getString("feed");
 
-    if (json != null) {
+    if (json != null && json != "[]") {
       List<Map<String, dynamic>> data =
           jsonDecode(json).cast<Map<String, dynamic>>();
       List<ImagePost> listOfPosts = _generateFeed(data);
@@ -85,25 +85,31 @@ class _Feed extends State<Feed> with AutomaticKeepAliveClientMixin<Feed> {
     SharedPreferences prefs = await SharedPreferences.getInstance();
 
     String userId = googleSignIn.currentUser.id.toString();
-    var url =
-        'https://us-central1-fluttergram-6e725.cloudfunctions.net/getFeed?uid=' + userId;
-        // var url = 'https://localhost:3000/users/insta-a-feed?uid='+userId;
+    // var url =
+    //     'https://us-central1-fluttergram-6e725.cloudfunctions.net/getFeed?uid=' + userId;
+        var url = 'https://io.mira-kis-v.xyz/users/insta-a-feed?uid='+userId;
+      print(url);
     // var httpClient = new HttpClient();
     var httpClient = new http.Client(); 
 
     List<ImagePost> listOfPosts;
     String result;
     try {
-      http.get(url)
-        .then((response) {
+      var response = await http.get(url);
+      // http.get(url)
+      //   .then((response) {
           print("Response status: ${response.statusCode}");
           print("Response body: ${response.body}");
-          prefs.setString("feed", response.body);
+          if(response.body != "[]") {
+            prefs.setString("feed", response.body);
+          } else {
+            prefs.setString("feed", null);
+          }
           List<Map<String, dynamic>> data =
             jsonDecode(response.body).cast<Map<String, dynamic>>();
           listOfPosts = _generateFeed(data);
           result = "Success in http request for feed";
-        });
+        // });
       // var request = await httpClient.getUrl(Uri.parse(url));
       // var response = await request.close();
       // var response = await httpClient.get(url);
